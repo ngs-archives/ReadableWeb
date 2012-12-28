@@ -23,6 +23,13 @@
 		85BDD11E168D2F26008FD068 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 85BDD0F9168D2F25008FD068 /* Foundation.framework */; };
 		85BDD126168D2F26008FD068 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 85BDD124168D2F26008FD068 /* InfoPlist.strings */; };
 		85BDD129168D2F26008FD068 /* ReadableWebTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 85BDD128168D2F26008FD068 /* ReadableWebTests.m */; };
+		85BDD13B168D2FC6008FD068 /* libxml2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 85BDD13A168D2FC6008FD068 /* libxml2.dylib */; };
+		85BDD13D168D2FF5008FD068 /* libicucore.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 85BDD13C168D2FF5008FD068 /* libicucore.dylib */; };
+		85BDD156168D3175008FD068 /* readable.c in Sources */ = {isa = PBXBuildFile; fileRef = 85BDD13F168D3175008FD068 /* readable.c */; };
+		85BDD159168D321C008FD068 /* rd_list.c in Sources */ = {isa = PBXBuildFile; fileRef = 85BDD157168D321C008FD068 /* rd_list.c */; };
+		85BDD15D168D3258008FD068 /* NSString+readable.m in Sources */ = {isa = PBXBuildFile; fileRef = 85BDD15C168D3258008FD068 /* NSString+readable.m */; };
+		85BDD160168D92A1008FD068 /* FoundationNamedAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 85BDD15F168D92A1008FD068 /* FoundationNamedAdditions.m */; };
+		85BDD162168D92BE008FD068 /* web.html in Resources */ = {isa = PBXBuildFile; fileRef = 85BDD161168D92BE008FD068 /* web.html */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +65,38 @@
 		85BDD125168D2F26008FD068 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		85BDD127168D2F26008FD068 /* ReadableWebTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ReadableWebTests.h; sourceTree = "<group>"; };
 		85BDD128168D2F26008FD068 /* ReadableWebTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ReadableWebTests.m; sourceTree = "<group>"; };
+		85BDD13A168D2FC6008FD068 /* libxml2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxml2.dylib; path = usr/lib/libxml2.dylib; sourceTree = SDKROOT; };
+		85BDD13C168D2FF5008FD068 /* libicucore.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libicucore.dylib; path = usr/lib/libicucore.dylib; sourceTree = SDKROOT; };
+		85BDD13F168D3175008FD068 /* readable.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = readable.c; sourceTree = "<group>"; };
+		85BDD140168D3175008FD068 /* readable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = readable.h; sourceTree = "<group>"; };
+		85BDD142168D3175008FD068 /* localpointer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = localpointer.h; sourceTree = "<group>"; };
+		85BDD143168D3175008FD068 /* parseerr.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = parseerr.h; sourceTree = "<group>"; };
+		85BDD144168D3175008FD068 /* platform.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = platform.h; sourceTree = "<group>"; };
+		85BDD145168D3175008FD068 /* ptypes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ptypes.h; sourceTree = "<group>"; };
+		85BDD146168D3175008FD068 /* putil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = putil.h; sourceTree = "<group>"; };
+		85BDD147168D3175008FD068 /* uchar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = uchar.h; sourceTree = "<group>"; };
+		85BDD148168D3175008FD068 /* uconfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = uconfig.h; sourceTree = "<group>"; };
+		85BDD149168D3175008FD068 /* uiter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = uiter.h; sourceTree = "<group>"; };
+		85BDD14A168D3175008FD068 /* umachine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = umachine.h; sourceTree = "<group>"; };
+		85BDD14B168D3175008FD068 /* uregex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = uregex.h; sourceTree = "<group>"; };
+		85BDD14C168D3175008FD068 /* urename.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = urename.h; sourceTree = "<group>"; };
+		85BDD14D168D3175008FD068 /* ustring.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ustring.h; sourceTree = "<group>"; };
+		85BDD14E168D3175008FD068 /* utext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = utext.h; sourceTree = "<group>"; };
+		85BDD14F168D3175008FD068 /* utf.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = utf.h; sourceTree = "<group>"; };
+		85BDD150168D3175008FD068 /* utf16.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = utf16.h; sourceTree = "<group>"; };
+		85BDD151168D3175008FD068 /* utf8.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = utf8.h; sourceTree = "<group>"; };
+		85BDD152168D3175008FD068 /* utf_old.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = utf_old.h; sourceTree = "<group>"; };
+		85BDD153168D3175008FD068 /* utypes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = utypes.h; sourceTree = "<group>"; };
+		85BDD154168D3175008FD068 /* uvernum.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = uvernum.h; sourceTree = "<group>"; };
+		85BDD155168D3175008FD068 /* uversion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = uversion.h; sourceTree = "<group>"; };
+		85BDD157168D321C008FD068 /* rd_list.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = rd_list.c; sourceTree = "<group>"; };
+		85BDD158168D321C008FD068 /* rd_list.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = rd_list.h; sourceTree = "<group>"; };
+		85BDD15A168D322F008FD068 /* khash.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = khash.h; sourceTree = "<group>"; };
+		85BDD15B168D3258008FD068 /* NSString+readable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+readable.h"; sourceTree = "<group>"; };
+		85BDD15C168D3258008FD068 /* NSString+readable.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+readable.m"; sourceTree = "<group>"; };
+		85BDD15E168D92A1008FD068 /* FoundationNamedAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FoundationNamedAdditions.h; sourceTree = "<group>"; };
+		85BDD15F168D92A1008FD068 /* FoundationNamedAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FoundationNamedAdditions.m; sourceTree = "<group>"; };
+		85BDD161168D92BE008FD068 /* web.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = web.html; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +104,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				85BDD13D168D2FF5008FD068 /* libicucore.dylib in Frameworks */,
+				85BDD13B168D2FC6008FD068 /* libxml2.dylib in Frameworks */,
 				85BDD0F8168D2F25008FD068 /* UIKit.framework in Frameworks */,
 				85BDD0FA168D2F25008FD068 /* Foundation.framework in Frameworks */,
 				85BDD0FC168D2F25008FD068 /* CoreGraphics.framework in Frameworks */,
@@ -106,6 +147,9 @@
 		85BDD0F6168D2F25008FD068 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				85BDD13E168D3175008FD068 /* readable */,
+				85BDD13C168D2FF5008FD068 /* libicucore.dylib */,
+				85BDD13A168D2FC6008FD068 /* libxml2.dylib */,
 				85BDD0F7168D2F25008FD068 /* UIKit.framework */,
 				85BDD0F9168D2F25008FD068 /* Foundation.framework */,
 				85BDD0FB168D2F25008FD068 /* CoreGraphics.framework */,
@@ -117,6 +161,9 @@
 		85BDD0FD168D2F25008FD068 /* ReadableWeb */ = {
 			isa = PBXGroup;
 			children = (
+				85BDD161168D92BE008FD068 /* web.html */,
+				85BDD15E168D92A1008FD068 /* FoundationNamedAdditions.h */,
+				85BDD15F168D92A1008FD068 /* FoundationNamedAdditions.m */,
 				85BDD106168D2F25008FD068 /* RWAppDelegate.h */,
 				85BDD107168D2F25008FD068 /* RWAppDelegate.m */,
 				85BDD10F168D2F25008FD068 /* MainStoryboard.storyboard */,
@@ -158,6 +205,49 @@
 				85BDD124168D2F26008FD068 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		85BDD13E168D3175008FD068 /* readable */ = {
+			isa = PBXGroup;
+			children = (
+				85BDD15B168D3258008FD068 /* NSString+readable.h */,
+				85BDD15C168D3258008FD068 /* NSString+readable.m */,
+				85BDD15A168D322F008FD068 /* khash.h */,
+				85BDD157168D321C008FD068 /* rd_list.c */,
+				85BDD158168D321C008FD068 /* rd_list.h */,
+				85BDD13F168D3175008FD068 /* readable.c */,
+				85BDD140168D3175008FD068 /* readable.h */,
+				85BDD141168D3175008FD068 /* unicode */,
+			);
+			name = readable;
+			path = Vendors/readable;
+			sourceTree = "<group>";
+		};
+		85BDD141168D3175008FD068 /* unicode */ = {
+			isa = PBXGroup;
+			children = (
+				85BDD142168D3175008FD068 /* localpointer.h */,
+				85BDD143168D3175008FD068 /* parseerr.h */,
+				85BDD144168D3175008FD068 /* platform.h */,
+				85BDD145168D3175008FD068 /* ptypes.h */,
+				85BDD146168D3175008FD068 /* putil.h */,
+				85BDD147168D3175008FD068 /* uchar.h */,
+				85BDD148168D3175008FD068 /* uconfig.h */,
+				85BDD149168D3175008FD068 /* uiter.h */,
+				85BDD14A168D3175008FD068 /* umachine.h */,
+				85BDD14B168D3175008FD068 /* uregex.h */,
+				85BDD14C168D3175008FD068 /* urename.h */,
+				85BDD14D168D3175008FD068 /* ustring.h */,
+				85BDD14E168D3175008FD068 /* utext.h */,
+				85BDD14F168D3175008FD068 /* utf.h */,
+				85BDD150168D3175008FD068 /* utf16.h */,
+				85BDD151168D3175008FD068 /* utf8.h */,
+				85BDD152168D3175008FD068 /* utf_old.h */,
+				85BDD153168D3175008FD068 /* utypes.h */,
+				85BDD154168D3175008FD068 /* uvernum.h */,
+				85BDD155168D3175008FD068 /* uversion.h */,
+			);
+			path = unicode;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -237,6 +327,7 @@
 				85BDD10C168D2F25008FD068 /* Default@2x.png in Resources */,
 				85BDD10E168D2F25008FD068 /* Default-568h@2x.png in Resources */,
 				85BDD111168D2F25008FD068 /* MainStoryboard.storyboard in Resources */,
+				85BDD162168D92BE008FD068 /* web.html in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -274,6 +365,10 @@
 				85BDD104168D2F25008FD068 /* main.m in Sources */,
 				85BDD108168D2F25008FD068 /* RWAppDelegate.m in Sources */,
 				85BDD114168D2F25008FD068 /* RWViewController.m in Sources */,
+				85BDD156168D3175008FD068 /* readable.c in Sources */,
+				85BDD159168D321C008FD068 /* rd_list.c in Sources */,
+				85BDD15D168D3258008FD068 /* NSString+readable.m in Sources */,
+				85BDD160168D92A1008FD068 /* FoundationNamedAdditions.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -378,6 +473,15 @@
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ReadableWeb/ReadableWeb-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"READABLE_USE_LIBICU=1",
+					"$(inherited)",
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(SRCROOT)/Vendors/readable",
+					/usr/include/libxml2,
+					"$(SRCROOT)/Vendors/readable/unicode",
+				);
 				INFOPLIST_FILE = "ReadableWeb/ReadableWeb-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
@@ -389,6 +493,15 @@
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ReadableWeb/ReadableWeb-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"READABLE_USE_LIBICU=1",
+					"$(inherited)",
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(SRCROOT)/Vendors/readable",
+					/usr/include/libxml2,
+					"$(SRCROOT)/Vendors/readable/unicode",
+				);
 				INFOPLIST_FILE = "ReadableWeb/ReadableWeb-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;

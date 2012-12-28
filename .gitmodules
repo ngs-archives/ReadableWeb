@@ -1,0 +1,3 @@
+[submodule "Vendors/readable"]
+	path = Vendors/readable
+	url = git://github.com/fiam/readable.git
